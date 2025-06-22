@@ -1,0 +1,58 @@
+{
+  "packageId": "com.omechu.app",
+  "host": "omechu.vercel.app",
+  "name": "오메추 - 오늘 메뉴 추천",
+  "launcherName": "오메추",
+  "display": "standalone",
+  "themeColor": "#f97316",
+  "navigationColor": "#f97316",
+  "backgroundColor": "#ffffff",
+  "enableNotifications": true,
+  "shortcuts": [
+    {
+      "name": "랜덤 추천",
+      "shortName": "랜덤",
+      "url": "/?action=random",
+      "icons": [
+        {
+          "src": "/icons/icon-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "AI 추천",
+      "shortName": "AI",
+      "url": "/?action=ai",
+      "icons": [
+        {
+          "src": "/icons/icon-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "webManifestUrl": "https://omechu.vercel.app/manifest.json",
+  "fallbackType": "customtabs",
+  "features": {
+    "playBilling": {
+      "enabled": false
+    }
+  },
+  "alphaDependencies": {
+    "enabled": false
+  },
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "useBrowserInShell": false,
+  "shareTarget": {
+    "action": "/",
+    "method": "GET",
+    "enctype": "application/x-www-form-urlencoded",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  }
+} 
